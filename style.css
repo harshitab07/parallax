@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+.pimage1{
+    background-image: url(image1.png);
+    min-height: 100%;
+}
+.pimage2{
+    background-image: url(image2.png);
+    min-height: 400px;
+}
+.pimage3{
+    background-image: url(image3.png);
+    min-height: 400px;
+}
+
+.pimage1, .pimage2, .pimage3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.textBg{
+    background-color: #313534;
+    color: #fff;
+    padding: 10px 15px;
+}
+.section{
+    padding: 50px 80px;
+    text-align: center;
+}
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track {
+    background-color: #313534;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+}
+@media(max-width: 600px){
+    .ptext{
+        font-size: 25px;
+    letter-spacing: 0px;
+    }
+    .textBg{
+        padding: 5px;
+    }
+}
